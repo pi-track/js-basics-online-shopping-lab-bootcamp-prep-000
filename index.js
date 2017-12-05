@@ -62,7 +62,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  delete cart[item]
+  for (var i=0;i<cart.length;i++) {
+    if (Object.keys(cart[i])===item) {
+      cart.splice(i,1)
+    }
+  }
   return
 }
 

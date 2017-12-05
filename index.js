@@ -49,6 +49,7 @@ function viewCart() {
       print_cart = print_cart + `${keys[i]} at $${values[i]}, `
     }
     console.log(`In your cart, you have ${print_cart}and ${keys[cart.length-1]} at $${values[cart.length-1]}.`)
+    return
   }
 }
 

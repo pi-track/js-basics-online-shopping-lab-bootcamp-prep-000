@@ -26,7 +26,6 @@ function viewCart() {
     var value = cart[0][key]
     console.log(`In your cart, you have ${key} at $${cart[0]}.`)
     return
-}`)
   }
 }
 

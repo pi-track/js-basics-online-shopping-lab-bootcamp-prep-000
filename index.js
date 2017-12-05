@@ -24,7 +24,8 @@ function viewCart() {
   else if (cart.length===1) {
     var key = Object.keys(cart[0])
     var value = cart[0][key]
-    console.log(`In your cart, you have ${key} at $${cart[0]}.`
+    console.log(`In your cart, you have ${key} at $${cart[0]}.`)
+    return
 }`)
   }
 }

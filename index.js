@@ -22,9 +22,9 @@ function viewCart() {
     console.log('Your shopping cart is empty.')
   }
   else if (cart.length===1) {
-    key = Object.keys(myAofO[0])
-    value = myAofO[0][key]
-    console.log(`In your cart, you have ${cart[0]} at $${cart[0].}`
+    var key = Object.keys(cart[0])
+    var value = cart[0][key]
+    console.log(`In your cart, you have ${key} at $${cart[0].}`
 }`)
   }
 }

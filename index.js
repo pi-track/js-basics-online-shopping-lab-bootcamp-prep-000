@@ -35,6 +35,15 @@ function viewCart() {
     console.log(`In your cart, you have ${key1} at $${value1} and ${key2} at $${value2}.`)
     return
   }
+  else {
+    //enumerate key value pairs
+    var keys = []
+    var values = []
+    for (i=0;i<cart.length;i++) {
+      keys.push(Object.keys(cart[i]))
+      values.push
+    }
+  }
 }
 
 function total() {

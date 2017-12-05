@@ -39,13 +39,13 @@ function viewCart() {
     //enumerate key value pairs
     var keys = []
     var values = []
-    for (i=0;i<cart.length;i++) {
+    for (var i=0;i<cart.length;i++) {
       keys.push(Object.keys(cart[i]))
       values.push(cart[i][keys[i]])
     }
     //build the print statement
     var print_cart =''
-    for (i=0;i<cart.length-1;i++) {
+    for (var i=0;i<cart.length-1;i++) {
       print_cart = print_cart + `${keys[i]} at $${values[i]}, `
     }
     console.log(`In your cart, you have ${print_cart}and ${keys[cart.length-1]} at $${values[cart.length-1]}.`)

@@ -13,6 +13,7 @@ function addToCart(item) {
   var myObject = new Object()
   myObject[item] = Math.ceil(100*Math.random())
   cart.push(myObject)
+  console.log(`${item} has been added to your cart.`)
 }
 
 function viewCart() {

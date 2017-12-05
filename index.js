@@ -62,10 +62,15 @@ function total() {
 }
 
 function removeFromCart(item) {
+  var entered = false
   for (var i=0;i<cart.length;i++) {
     if (Object.keys(cart[i])===item) {
       cart.splice(i,1)
+      var entered = true
     }
+  }
+  if (entered = false) {
+    console.log('That item is not in your cart.')
   }
   return
 }

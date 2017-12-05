@@ -27,6 +27,14 @@ function viewCart() {
     console.log(`In your cart, you have ${key} at $${value}.`)
     return
   }
+  else if (cart.length === 2) {
+    var key1 = Object.keys(cart[0])
+    var value1 = cart[0][key1]
+    var key2 = Object.keys(cart[1])
+    var value2 = cart[1][key2]
+    console.log(`In your cart, you have ${key1} at $${value1} and ${key2} at $${value2}.`)
+    return
+  }
 }
 
 function total() {
